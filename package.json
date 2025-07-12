@@ -1,0 +1,30 @@
+{
+  "name": "fluxwave-rewear",
+  "version": "1.0.0",
+  "description": "backend for rewearsite",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules D:/Krishna/Fluxwave-Rewear/BACKEND/server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princek2007/Fluxwave-Rewear.git"
+  },
+  "keywords": [
+    "fluxwaveB"
+  ],
+  "author": "Krishna Makani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/princek2007/Fluxwave-Rewear/issues"
+  },
+  "homepage": "https://github.com/princek2007/Fluxwave-Rewear#readme",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.3",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {}
+}
