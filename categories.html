@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Avengers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        }
+
+        .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-width: 180px;  /* Makes sure cards don’t get too small */
+        max-width: 200px;
+        }
+
+        .card-img-top {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        background-color: #f0f0f0;
+        }
+
+        .card-body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        min-height: 180px;
+        }
+
+        .card-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        }
+
+        .card-text {
+        font-size: 0.85rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        min-height: 3.9em;
+        }
+
+        .card a.btn {
+        margin-top: auto;
+        }
+
+        /* Force horizontal scroll without wrapping */
+        .scroll-container {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 15px;
+        gap: 15px;
+        scrollbar-width: thin;
+        }
+
+        .scroll-container::-webkit-scrollbar {
+        height: 8px;
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 4px;
+        }
+
+        .card-wrapper {
+        flex: 0 0 auto; /* Prevent shrinking, cards stay side by side */
+        }
+
+    </style>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-dark" style="background-color: black;">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <a class="navbar-brand" href="#">
+      <img src="D:\PRINCE\WEB-DEVELOPMENT\MARVEL\Assets\Homepage\images\logo.png" alt="Logo" width="80" height="40">
+    </a>
+    <div>
+      <button class="btn btn-success me-2">Log In</button>
+      <button class="btn btn-success">Sign Up</button>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- <div class="container mt-4">
+    <div class="image-container position-relative text-center">
+        <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\backgroundimage.jpg" class="img-fluid" alt="Avengers">
+    </div>
+    </div> -->
+
+    <div class="container-fluid mt-4 px-0">
+    <h2 class="fw-bold mb-0" style="margin-left: 20px;">
+        <a href="latest.html" style="text-decoration: none; color: black;"> Categories </a>
+    </h2>
+    </div>
+
+     <div class="container-fluid mt-4 px-0">
+    <h2 class="fw-bold mb-0" style="margin-left: 20px;">
+        <a href="latest.html" style="text-decoration: none; color: black;"> shirts </a>
+    </h2>
+
+    </div>
+    <div class="container-fluid mt-2 px-0">
+    <div class="scroll-container">
+
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="d:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\s3.jpg" class="card-img-top" alt="shirt">
+            <div class="card-body">
+            <h5 class="card-title">1. Brand: Roadster</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹349 </h3>
+            👔 
+
+    Product: Men's Solid Casual Shirt
+
+    Color: Olive Green
+
+    Fabric: 100% Cotton
+
+    Fit: Slim Fit
+
+    Sleeve: Full Sleeves
+
+    Collar: Spread Collar
+
+    Sizes: S, M, L, XL, XXL
+
+    Occasion: Casual wear
+
+
+            <p class="card-text">Stylish slim fit with breathable fabric</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\shirt1.jpg" class="card-img-top" alt="shirt">
+            <div class="card-body">
+            <h5 class="card-title">2. Brand: Levi's</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹349 </h3>
+            👕 
+
+    Product: Men's Checked Shirt
+
+    Color: Navy Blue & White Checks
+
+    Fabric: Cotton Blend
+
+    Fit: Regular Fit
+
+    Sleeve: Full Sleeves with Button Cuffs
+
+    Collar: Button-Down Collar
+
+    Sizes: M, L, XL
+
+    Occasion: Smart casual / Office wear
+
+
+            <p class="card-text">Stylish slim fit with breathable fabric</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\shirt1.jpg" class="card-img-top" alt="shirt">
+            <div class="card-body">
+            <h5 class="card-title">3. Brand: Allen Solly</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹349 </h3>
+            👔 
+
+    Product: Men's Printed Shirt
+
+    Color: Sky Blue with Micro Print
+
+    Fabric: Cotton
+
+    Fit: Slim Fit
+
+    Sleeve: Half Sleeves
+
+    Collar: Spread Collar
+
+    Sizes: S to XXL
+
+    Occasion: Casual Fridays, Day Out
+            <p class="card-text">Stylish slim fit with breathable fabric</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\shirt1.jpg" class="card-img-top" alt="shirt">
+            <div class="card-body">
+            <h5 class="card-title">4. Brand: Peter England</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹349 </h3>
+            👕 
+    Product: Men's Formal Shirt
+
+    Color: White
+
+    Fabric: Poly-Cotton
+
+    Fit: Regular Fit
+
+    Sleeve: Full Sleeve
+
+    Collar: Classic Collar
+
+    Sizes: 38, 40, 42, 44
+
+    Occasion: Formal Office Wear
+            <p class="card-text">Stylish slim fit with breathable fabric</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\shirt1.jpg" class="card-img-top" alt="shirt">
+            <div class="card-body">
+            <h5 class="card-title">5. Brand: U.S. Polo Assn.</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹349 </h3>
+            👔 
+    Product: Men's Solid Oxford Shirt
+
+    Color: Maroon
+
+    Fabric: 100% Cotton
+
+    Fit: Slim Fit
+
+    Sleeve: Full Sleeves
+
+    Collar: Mandarin Collar
+
+    Sizes: M, L, XL
+
+    Occasion: Casual / Dinner wear
+
+            <p class="card-text">Stylish slim fit with breathable fabric</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+    <br>
+
+     <div class="container-fluid mt-4 px-0">
+    <h2 class="fw-bold mb-0" style="margin-left: 20px;">
+        <a href="latest.html" style="text-decoration: none; color: black;"> Jeans </a>
+    </h2>
+    </div>
+
+    <div class="card-container">
+
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\cargo pant.jpg" class="card-img-top" alt="jeans">
+            <div class="card-body">
+            <h5 class="card-title">1. Brand: Levi's</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹399 </h3>
+    👖 
+    Product: 511 Slim Fit Stretch Jeans
+
+    Color: Dark Indigo Blue
+
+    Fabric: 98% Cotton, 2% Elastane
+
+    Fit: Slim Fit
+
+    Waist Rise: Mid Rise
+
+    Stretch: Yes (Comfort Stretch)
+
+    Sizes: 30, 32, 34, 36
+
+    Occasion: Everyday / Smart Casual
+        <p class="card-text">these men’s jeans offer a perfect blend of comfort</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\cargo pant.jpg" class="card-img-top" alt="jeans">
+            <div class="card-body">
+            <h5 class="card-title"> 2. Brand: Wrangler</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹399 </h3>
+            👖
+    Product: Regular Fit Mid-Wash Jeans
+
+    Color: Classic Blue
+
+    Fabric: Cotton Blend
+
+    Fit: Regular Fit
+
+    Waist Rise: Mid Rise
+
+    Stretch: Light Stretch
+
+    Sizes: 28 to 38
+
+    Occasion: Daily Wear / Travel
+            <p class="card-text">these men’s jeans offer a perfect blend of comfort</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\cargo pant.jpg" class="card-img-top" alt="jeans">
+            <div class="card-body">
+            <h5 class="card-title">3. Brand: Spykar</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹399 </h3>
+            👖 
+    Product: Low Rise Skinny Fit Jeans
+
+    Color: Jet Black
+
+    Fabric: Cotton with Lycra
+
+    Fit: Skinny Fit
+
+    Waist Rise: Low Rise
+
+    Stretch: High Flexibility
+
+    Sizes: 30, 32, 34, 36
+
+    Occasion: Party / Night Out
+            <p class="card-text">these men’s jeans offer a perfect blend of comfort</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\cargo pant.jpg" class="card-img-top" alt="jeans">
+            <div class="card-body">
+            <h5 class="card-title">4. Brand: Jack & Jones</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹399 </h3>
+            👖 
+    Product: Tapered Fit Washed Denim
+
+    Color: Charcoal Grey Fade
+
+    Fabric: 99% Cotton, 1% Elastane
+
+    Fit: Tapered Fit
+
+    Waist Rise: Mid Rise
+
+    Stretch: Medium Stretch
+
+    Sizes: 30 to 40
+
+    Occasion: Casual Friday / Dinner
+            <p class="card-text">these men’s jeans offer a perfect blend of comfort</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\cargo pant.jpg" class="card-img-top" alt="jeans">
+            <div class="card-body">
+            <h5 class="card-title">5. Brand: Peter England</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹399 </h3>
+            👖 
+    Product: Regular Fit Light Washed Jeans
+
+    Color: Ice Blue
+
+    Fabric: Cotton-Polyester Blend
+
+    Fit: Regular Fit
+
+    Waist Rise: Mid Rise
+
+    Stretch: Slight Stretch
+
+    Sizes: 30 to 38
+
+    Occasion: Office Casual / Weekend
+            <p class="card-text">these men’s jeans offer a perfect blend of comfort</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+
+        </div>
+    <br>
+
+     <div class="container-fluid mt-4 px-0">
+    <h2 class="fw-bold mb-0" style="margin-left: 20px;">
+        <a href="latest.html" style="text-decoration: none; color: black;"> T-shirts </a>
+    </h2>
+    </div>
+
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\T-shirt.jpg" class="card-img-top" alt="T-shirt">
+            <div class="card-body">
+            <h5 class="card-title">1. Levi's Men's Graphic Print T-Shirt</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹300 </h3>
+    Color: White with Red Logo
+    Fit: Regular
+    Fabric: 100% Cotton
+    Description: Crew neck tee with bold Levi's logo print. Lightweight and breathable for everyday wear.
+    Available Sizes: S, M, L, XL, XXL
+            <p class="card-text">crafted for all-day ease with a modern fit</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\T-shirt.jpg" class="card-img-top" alt="T-shirt">
+            <div class="card-body">
+            <h5 class="card-title">2. Puma Men’s Essentials Logo T-Shirt</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹300 </h3>
+    Color: Black with White Puma Logo
+    Fit: Slim
+    Fabric: Cotton blend
+    Description: Soft jersey fabric with a minimalist design. Ideal for workouts and casual looks.
+    Available Sizes: M, L, XL
+    ble PDF format?<p class="card-text">crafted for all-day ease with a modern fit</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\T-shirt.jpg" class="card-img-top" alt="T-shirt">
+            <div class="card-body">
+            <h5 class="card-title"> 3. Adidas Men's Sports T-Shirt</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹300 </h3>
+    Color: Navy Blue with White Stripes
+    Fit: Regular
+    Fabric: 70% Cotton, 30% Polyester
+    Description: Breathable sporty tee with Adidas branding and sleeve stripes.
+    Available Sizes: S, M, L, XL<p class="card-text">crafted for all-day ease with a modern fit</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\T-shirt.jpg" class="card-img-top" alt="T-shirt">
+            <div class="card-body">
+            <h5 class="card-title">4. Jack & Jones Solid Round Neck T-Shirt</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹300 </h3>
+    Color: Olive Green
+    Fit: Slim
+    Fabric: 100% Cotton
+    Description: Solid pattern tee with ribbed neckline. Perfect for layering or standalone wear.
+    Available Sizes: M, L, XL, XXL<p class="card-text">crafted for all-day ease with a modern fit</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\T-shirt.jpg" class="card-img-top" alt="T-shirt">
+            <div class="card-body">
+            <h5 class="card-title">5. HRX by Hrithik Roshan Active T-Shirt</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹300 </h3>
+
+    Color: Charcoal Grey
+    Fit: Athletic
+    Fabric: Polyester blend with quick-dry tech
+    Description: Designed for performance with sweat-wicking fabric. Ideal for sports and gym.
+    Available Sizes: S, M, L, XL
+            <p class="card-text">crafted for all-day ease with a modern fit</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+    <br>
+        
+     <div class="container-fluid mt-4 px-0">
+    <h2 class="fw-bold mb-0" style="margin-left: 20px;">
+        <a href="latest.html" style="text-decoration: none; color: black;">sarees </a>
+    </h2>
+    </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\saree_.jpg" class="card-img-top" alt="saree">
+            <div class="card-body">
+            <h5 class="card-title">1. Brand: BIBA </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹299 </h3>       
+    🧵 
+    Product: Printed Georgette Saree with Blouse
+
+    Color: Peach & Pink Floral Print
+
+    Fabric: Georgette
+
+    Blouse: Unstitched, Matching Printed Fabric
+
+    Work: Printed Design
+
+    Size: Saree Length – 5.5m, Blouse – 0.8m
+
+    Occasion: Casual / Daily Wear
+
+    <p class="card-text">Drape elegance in every fold with this beautifully crafted saree</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\saree_.jpg" class="card-img-top" alt="saree">
+            <div class="card-body">
+            <h5 class="card-title">2. Brand: Suta </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹299 </h3>
+            👗 
+    Product: Handwoven Cotton Saree
+
+    Color: Sky Blue with White Stripes
+
+    Fabric: Pure Cotton
+
+    Blouse: Not Included
+
+    Work: Minimal Handloom Weave
+
+    Size: 5.5m Length
+
+    Occasion: Office / Summer Casual
+
+            <p class="card-text">Drape elegance in every fold with this beautifully crafted saree</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\saree_.jpg" class="card-img-top" alt="saree">
+            <div class="card-body">
+            <h5 class="card-title">3. Brand: FabIndia</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹299 </h3>
+            👚 
+    Product: Tussar Silk Handwoven Saree
+
+    Color: Beige with Maroon Border
+
+    Fabric: Tussar Silk
+
+    Blouse: Unstitched Maroon Blouse Piece
+
+    Work: Woven Border
+
+    Size: 6.3m (with blouse)
+
+    Occasion: Formal / Ethnic
+            <p class="card-text">Drape elegance in every fold with this beautifully crafted saree</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\saree_.jpg" class="card-img-top" alt="saree">
+            <div class="card-body">
+            <h5 class="card-title"> 4. Brand: Kalini (Myntra) </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹299 </h3>
+            👗
+    Product: Embellished Georgette Saree
+
+    Color: Wine Purple with Golden Sequin
+
+    Fabric: Georgette
+
+    Blouse: Contrast Golden Unstitched Blouse
+
+    Work: Sequin Embroidery
+
+    Size: 5.5m + 0.8m blouse
+
+    Occasion: Party / Wedding
+            <p class="card-text">Drape elegance in every fold with this beautifully crafted saree</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\ladies tshirt_.jpg" class="card-img-top" alt="saree">
+            <div class="card-body">
+            <h5 class="card-title"> 5. Brand: Mirraw</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹399 </h3>
+            👚
+    Product: Cotton Silk Traditional Saree
+
+    Color: Red & Green with Golden Zari
+
+    Fabric: Cotton Silk Blend
+
+    Blouse: Green Brocade Fabric
+
+    Work: Zari Border & Pallu
+
+    Size: 6.3m
+
+    Occasion: Festival / Pooja
+            <p class="card-text">Soft, breathable cotton T-shirt designed for everyday comfort with a modern</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+    <br>
+
+     <div class="container-fluid mt-4 px-0">
+    <h2 class="fw-bold mb-0" style="margin-left: 20px;">
+        <a href="latest.html" style="text-decoration: none; color: black;"> Professional clothes </a>
+    </h2>
+    </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\professional cloth_.jpg" class="card-img-top" alt="professional">
+            <div class="card-body">
+            <h5 class="card-title"> 1. Brand: FabIndia</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹399 </h3>
+    👔
+    Product: Men's Handwoven Cotton Kurta
+
+    Color: Light Grey
+
+    Fabric: 100% Handloom Cotton
+
+    Fit: Regular Fit
+
+    Sleeve: Full Sleeves
+
+    Collar: Mandarin Collar
+
+    Sizes: 38, 40, 42, 44
+
+    Occasion: Professional / Office Ethnic Day
+        <p class="card-text">Tailored for confidence, this professional wear blends style with comfort</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\professional cloth_.jpg" class="card-img-top" alt="professional">
+            <div class="card-body">
+            <h5 class="card-title">2. Brand: Manyavar </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹399 </h3>       
+    👕 
+    Product: Solid Formal Kurta
+
+    Color: Navy Blue
+
+    Fabric: Silk Blend
+
+    Fit: Classic Fit
+
+    Sleeve: Full Sleeve
+
+    Collar: Band Collar
+
+    Sizes: S to XXL
+
+    Occasion: Office Functions / Business Ethnic
+
+            <p class="card-text">Tailored for confidence, this professional wear blends style with comfort</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\professional cloth_.jpg" class="card-img-top" alt="professional">
+            <div class="card-body">
+            <h5 class="card-title"> 3. Brand: Peter England</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹399 </h3>
+            👔
+    Product: Office Wear Cotton Kurta
+
+    Color: White with Subtle Stripes
+
+    Fabric: Cotton Blend
+
+    Fit: Slim Fit
+
+    Sleeve: Full Sleeves
+
+    Collar: Chinese Collar
+
+    Sizes: M to XXL
+
+    Occasion: Formal / Corporate Settings
+            <p class="card-text">Tailored for confidence, this professional wear blends style with comfort</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\professional cloth_.jpg" class="card-img-top" alt="professional">
+            <div class="card-body">
+            <h5 class="card-title"> 4. Brand: Raymond Ethnix </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹399 </h3>
+            👕
+    Product: Linen Blend Short Kurta
+
+    Color: Sky Blue
+
+    Fabric: Linen-Cotton Blend
+
+    Fit: Regular Fit
+
+    Sleeve: Full Sleeves
+
+    Collar: Stand Collar
+
+    Sizes: 38 to 44
+
+    Occasion: Office Wear / Summer Professional Look
+            <p class="card-text">Tailored for confidence, this professional wear blends style with comfort</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\professional cloth_.jpg" class="card-img-top" alt="professional">
+            <div class="card-body">
+            <h5 class="card-title"> 5. Brand: Sojanya </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹399 </h3>
+            👔
+
+    Product: Casual Formal Kurta
+
+    Color: Pastel Green
+
+    Fabric: Cotton
+
+    Fit: Straight Fit
+
+    Sleeve: Roll-up Full Sleeves
+
+    Collar: Mandarin Collar
+
+    Sizes: S to XL
+
+    Occasion: Office Casual / Friday Ethnic
+            <p class="card-text">Tailored for confidence, this professional wear blends style with comfort</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+
+    <br>
+
+     <div class="container-fluid mt-4 px-0">
+    <h2 class="fw-bold mb-0" style="margin-left: 20px;">
+        <a href="latest.html" style="text-decoration: none; color: black;"> kurti </a>
+    </h2>
+    </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\kurties_.jpg" class="card-img-top" alt="kurti">
+            <div class="card-body">
+            <h5 class="card-title">1. Brand: BIBA</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹259 </h3>
+    👗 
+
+    Product: Women's Straight Cotton Kurti
+
+    Color: Peach with Floral Print
+
+    Fabric: 100% Cotton
+
+    Fit: Regular Fit
+
+    Sleeve: 3/4 Sleeves
+
+    Neckline: Round Neck with Keyhole
+
+    Length: Calf Length
+
+    Sizes: S, M, L, XL, XXL
+
+    Occasion: Casual / Office Wear
+            <p class="card-text">Step out in style with this elegant kurti, designed for comfort and grace in every detail</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\kurties_.jpg" class="card-img-top" alt="kurti">
+            <div class="card-body">
+            <h5 class="card-title"> 2. Brand: W for Women
+    </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹259 </h3>
+            👚
+    Product: Solid A-Line Kurti
+
+    Color: Navy Blue
+
+    Fabric: Rayon Blend
+
+    Fit: Slim Fit
+
+    Sleeve: Sleeveless
+
+    Neckline: Mandarin Collar
+
+    Length: Knee Length
+
+    Sizes: XS to XL
+
+    Occasion: Work / Semi-formal
+            <p class="card-text">Step out in style with this elegant kurti, designed for comfort and grace in every detail</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\kurties_.jpg" class="card-img-top" alt="kurti">
+            <div class="card-body">
+            <h5 class="card-title"> 3. Brand: Aurelia
+    </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹259 </h3>
+            👗
+    Product: Printed Flared Kurti
+
+    Color: Mustard Yellow with Ethnic Motifs
+
+    Fabric: Viscose
+
+    Fit: Flared Fit
+
+    Sleeve: 3/4 Bell Sleeves
+
+    Neckline: Round Neck
+
+    Length: Ankle Length
+
+    Sizes: S to XXL
+
+    Occasion: Festive / Party Wear
+            <p class="card-text">Step out in style with this elegant kurti, designed for comfort and grace in every detail</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\kurties_.jpg" class="card-img-top" alt="kurti">
+            <div class="card-body">
+            <h5 class="card-title"> 4. Brand: Libas</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹259 </h3>
+            👚
+    Product: Embroidered Straight Kurta
+
+    Color: Bottle Green
+
+    Fabric: Cotton Blend
+
+    Fit: Straight Fit
+
+    Sleeve: Full Sleeves
+
+    Neckline: V-Neck
+
+    Length: Calf Length
+
+    Sizes: M, L, XL, XXL
+
+    Occasion: Office / Daily Wear
+            <p class="card-text">Step out in style with this elegant kurti, designed for comfort and grace in every detail</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\kurties_.jpg" class="card-img-top" alt="kurti">
+            <div class="card-body">
+            <h5 class="card-title"> 5. Brand: FabIndia
+    </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹259 </h3>
+            👗
+    Product: Handwoven Cotton Kurti
+
+    Color: Off-White with Red Border
+
+    Fabric: Pure Cotton (Handloom)
+
+    Fit: Regular Fit
+
+    Sleeve: Half Sleeves
+
+    Neckline: Notched Round Neck
+
+    Length: Hip Length
+
+    Sizes: S, M, L, XL
+
+    Occasion: Traditional / Formal
+            <p class="card-text">Step out in style with this elegant kurti, designed for comfort and grace in every detail</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+    <br>
+
+
+     <div class="container-fluid mt-4 px-0">
+    <h2 class="fw-bold mb-0" style="margin-left: 20px;">
+        <a href="latest.html" style="text-decoration: none; color: black;"> Frocks</a>
+    </h2>
+    </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\frocks_.jpg" class="card-img-top" alt="frocks">
+            <div class="card-body">
+            <h5 class="card-title"> 1. Brand: ONLY </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹299 </h3>
+    👗
+    Product: Women's A-line Frock
+
+    Color: Baby Pink with Ruffle Detail
+
+    Fabric: Polyester
+
+    Fit: A-Line Fit
+
+    Sleeve: Sleeveless
+
+    Neckline: V-Neck
+
+    Length: Above Knee
+
+    Sizes: XS, S, M, L
+
+    Occasion: Party / Brunch
+            <p class="card-text">Twirl in charm with this stylish ladies' frock</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\frocks_.jpg" class="card-img-top" alt="frocks">
+            <div class="card-body">
+            <h5 class="card-title"> 2. Brand: DressBerry </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹299 </h3>
+            👗
+    Product: Polka Dot Fit & Flare Dress
+
+    Color: Navy Blue with White Dots
+
+    Fabric: Viscose Rayon
+
+    Fit: Fit & Flare
+
+    Sleeve: Short Sleeves
+
+    Neckline: Round Neck
+
+    Length: Knee Length
+
+    Sizes: S, M, L, XL
+
+    Occasion: Casual / Day Out
+            <p class="card-text">Twirl in charm with this stylish ladies' frock</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\frocks_.jpg" class="card-img-top" alt="frocks">
+            <div class="card-body">
+            <h5 class="card-title">3. Brand: Tokyo Talkies </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹299 </h3>
+            👗 
+    Product: Floral Printed Skater Frock
+
+    Color: Mint Green with Multi Floral Print
+
+    Fabric: Polyester Blend
+
+    Fit: Slim Fit
+
+    Sleeve: Cap Sleeves
+
+    Neckline: Square Neck
+
+    Length: Above Knee
+
+    Sizes: XS, S, M, L
+
+    Occasion: Summer Casual / Vacation
+            <p class="card-text">Twirl in charm with this stylish ladies' frock</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\frocks_.jpg" class="card-img-top" alt="frocks">
+            <div class="card-body">
+            <h5 class="card-title"> 4. Brand: Biba</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹299 </h3>
+            👗
+    Product: Ethnic Printed Frock Dress
+
+    Color: Yellow with Ethnic Motifs
+
+    Fabric: Cotton
+
+    Fit: Flared Fit
+
+    Sleeve: 3/4 Sleeves
+
+    Neckline: Round Neck
+
+    Length: Calf Length
+
+    Sizes: XS to XXL
+
+    Occasion: Festive / Family Gathering
+            <p class="card-text">Twirl in charm with this stylish ladies' frock</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\frocks_.jpg" class="card-img-top" alt="frocks">
+            <div class="card-body">
+            <h5 class="card-title"> 5. Brand: ZARA</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹299 </h3>
+            👗
+    Product: Solid Belted Midi Frock
+
+    Color: Olive Green
+
+    Fabric: Linen Blend
+
+    Fit: Relaxed Fit
+
+    Sleeve: Short Sleeves
+
+    Neckline: Collared V-Neck
+
+    Length: Midi
+
+    Sizes: S, M, L
+
+    Occasion: Office / Smart Casual
+
+            <p class="card-text">Twirl in charm with this stylish ladies' frock</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+
+    <br>  
+
+     <div class="container-fluid mt-4 px-0">
+    <h2 class="fw-bold mb-0" style="margin-left: 20px;">
+        <a href="latest.html" style="text-decoration: none; color: black;"> Male kurta </a>
+    </h2>
+    </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\mankurta.jpg" class="card-img-top" alt="mankurta">
+            <div class="card-body">
+            <h5 class="card-title">1. Brand: Manyavar </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹299 </h3>
+            <p class="card-text">Embrace tradition with this stylish men’s kurta</p>
+    👕 
+    Product: Solid Straight Kurta
+
+    Color: Maroon
+
+    Fabric: Art Silk
+
+    Fit: Regular Fit
+
+    Sleeve: Full Sleeves
+
+    Collar: Mandarin Collar
+
+    Sizes: S, M, L, XL, XXL
+
+    Occasion: Wedding / Festive Wear
+    <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\mankurta.jpg" class="card-img-top" alt="mankurta">
+            <div class="card-body">
+            <h5 class="card-title"> 2. Brand: FabIndia</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹299 </h3>
+            <p class="card-text">Embrace tradition with this stylish men’s kurta</p>
+            👕
+
+    Product: Handwoven Cotton Kurta
+
+    Color: Beige
+
+    Fabric: Pure Cotton (Handloom)
+
+    Fit: Relaxed Fit
+
+    Sleeve: Long Sleeves
+
+    Collar: Chinese Collar
+
+    Sizes: 38 to 46
+
+    Occasion: Ethnic Casual / Daily Wear
+
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\mankurta.jpg" class="card-img-top" alt="mankurta">
+            <div class="card-body">
+            <h5 class="card-title"> 3. Brand: Peter England
+    </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹299 </h3>
+            <p class="card-text">Embrace tradition with this stylish men’s kurta</p>
+            👕
+    Product: Printed Kurta for Men
+
+    Color: Navy Blue with White Floral Print
+
+    Fabric: Cotton Blend
+
+    Fit: Slim Fit
+
+    Sleeve: Full Sleeves
+
+    Collar: Band Collar
+
+    Sizes: S to XL
+
+    Occasion: Family Gatherings / Small Functions  
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\mankurta.jpg" class="card-img-top" alt="mankurta">
+            <div class="card-body">
+            <h5 class="card-title">4. Brand: Manyavar Mohey</h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹299 </h3>
+            <p class="card-text">Embrace tradition with this stylish men’s kurta</p>
+            👕 
+
+    Product: Embroidered Silk Kurta
+
+    Color: Off-White with Golden Embroidery
+
+    Fabric: Silk Blend
+
+    Fit: Classic Fit
+
+    Sleeve: Full Sleeves
+
+    Collar: Mandarin Collar
+
+    Sizes: M, L, XL, XXL
+
+    Occasion: Engagement / Reception
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+        <div class="card-wrapper">
+        <div class="card">
+            <img src="C:\Users\PRINCE\Fluxwave-Rewear\Frontend\assets\images\mankurta.jpg" class="card-img-top" alt="mankurta">
+            <div class="card-body">
+            <h5 class="card-title"> 5. Brand: KISAH </h5>
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> ₹299 </h3>
+            <p class="card-text">Embrace tradition with this stylish men’s kurta</p>
+            👕
+
+    Product: Jacquard Kurta for Men
+
+    Color: Teal Green
+
+    Fabric: Polyester Jacquard
+
+    Fit: Straight Fit
+
+    Sleeve: Full Sleeves
+
+    Collar: Stand Collar
+
+    Sizes: S to XXL
+
+    Occasion: Party / Ethnic Event
+
+            <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+    <footer class="bg-black text-light pt-5 pb-4 mt-5">
+    <div class="container">
+        <div class="row gy-4">
+
+        <!-- About Us -->
+        <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-3 text-uppercase">About the Avengers</h5>
+            <p class="small text-secondary">
+                    ReWear is a community-driven clothing exchange platform that promotes sustainable fashion by encouraging people to swap, share, and reuse wearable garments instead of throwing them away. Our mission is to reduce textile waste, empower conscious consumers, and build a circular fashion system that benefits both the planet and the people.
+        Together, we can make second-hand the first choice.
+            </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-3 text-uppercase">Contact</h5>
+            <p class="small text-secondary mb-1">
+            Managed by: <span class="text-white fw-semibold">team fluxwave</span>
+            </p>
+            <p class="small text-secondary mb-1">
+            S.H.I.E.L.D. Helicarrier HQ
+            </p>
+            <p class="small text-secondary mb-0">
+            Email: <a href="#" class="text-decoration-none text-white">fury@shield.marvel</a>
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-3 text-uppercase">Quick Links</h5>
+            <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Home</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">explore clothes</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Categories</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">join the ReWear community</a></li>
+            </ul>
+        </div>
+
+        </div>
+
+        <hr class="border-secondary mt-5">
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-secondary small">
+        <p class="mb-2 mb-md-0">© 2025 Avengers Universe. All Rights Reserved.</p>
+        <div>
+            <a href="#" class="text-secondary fs-5 me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-secondary fs-5 me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-secondary fs-5 me-3"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-secondary fs-5"><i class="bi bi-youtube"></i></a>
+        </div>
+        </div>
+
+    </div>
+    </footer>
+
+    </body>
+    </html>

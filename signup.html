@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Signup Page</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body, html {
+        height: 100%;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        }
+
+        .bg-image {
+        background-image: url('https://source.unsplash.com/1600x900/?clothes,fashion');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        }
+
+        .form-box {
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 30px;
+        border-radius: 10px;
+        margin-left: 50px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+        .form-box {
+            margin: 20px;
+            width: 90%;
+        }
+        }
+    </style>
+
+<script>
+  const signupForm = document.querySelector("#signup-form");
+  signupForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const fullName = signupForm.fullName.value;
+    const email = signupForm.email.value;
+    const mobile = signupForm.mobile.value;
+    const password = signupForm.password.value;
+    const confirmPassword = signupForm.confirmPassword.value;
+
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+      return;
+    }
+
+    const res = await fetch("http://localhost:5000/api/auth/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ fullName, email, mobile, password }),
+    })
+
+     const data = await res.json();
+    if (res.ok) {
+      alert("Signup successful");
+      // Redirect or store token
+    } else {
+      alert(data.message || "Signup failed");
+    }
+  });
+</script>
+
+
+    </head>
+    <body>
+
+    <nav class="navbar navbar-dark" style="background-color: black;">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">
+        <img src="D:\PRINCE\WEB-DEVELOPMENT\MARVEL\Assets\Homepage\images\logo.png" alt="Logo" width="80" height="40">
+        </a>
+        <div>
+        <button class="btn btn-success me-2">Log In</button>
+        
+        </div>
+    </div>
+    </nav>
+
+    <div class="bg-image">
+        <div class="form-box">
+        <h2 class="mb-4 text-center">Sign Up</h2>
+        <form>
+            <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+            <label for="mobile" class="form-label">Mobile Number</label>
+            <input type="tel" class="form-control" id="mobile" placeholder="Enter your mobile number" required>
+            </div>
+            <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+            </div>
+            <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password" required>
+            </div>
+            <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="terms" required>
+            <label class="form-check-label" for="terms">
+                I agree to the terms and conditions
+            </label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+        </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer class="bg-black text-light pt-5 pb-4 mt-5">
+    <div class="container">
+        <div class="row gy-4">
+
+        <!-- About Us -->
+        <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-3 text-uppercase">About the Avengers</h5>
+            <p class="small text-secondary">
+                    ReWear is a community-driven clothing exchange platform that promotes sustainable fashion by encouraging people to swap, share, and reuse wearable garments instead of throwing them away. Our mission is to reduce textile waste, empower conscious consumers, and build a circular fashion system that benefits both the planet and the people.
+        Together, we can make second-hand the first choice.
+            </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-3 text-uppercase">Contact</h5>
+            <p class="small text-secondary mb-1">
+            Managed by: <span class="text-white fw-semibold">team fluxwave</span>
+            </p>
+            <p class="small text-secondary mb-1">
+            S.H.I.E.L.D. Helicarrier HQ
+            </p>
+            <p class="small text-secondary mb-0">
+            Email: <a href="#" class="text-decoration-none text-white">fury@shield.marvel</a>
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-3 text-uppercase">Quick Links</h5>
+            <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Home</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">explore clothes</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Categories</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">join the ReWear community</a></li>
+            </ul>
+        </div>
+
+        </div>
+
+        <hr class="border-secondary mt-5">
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-secondary small">
+        <p class="mb-2 mb-md-0">© 2025 Avengers Universe. All Rights Reserved.</p>
+        <div>
+            <a href="#" class="text-secondary fs-5 me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-secondary fs-5 me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-secondary fs-5 me-3"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-secondary fs-5"><i class="bi bi-youtube"></i></a>
+        </div>
+        </div>
+
+    </div>
+    </footer>
+
+    </body>
+    </html>

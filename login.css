@@ -1,0 +1,73 @@
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      min-width: 180px;  /* Makes sure cards don’t get too small */
+      max-width: 200px;
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      background-color: #f0f0f0;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      min-height: 180px;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .card-text {
+      font-size: 0.85rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      min-height: 3.9em;
+    }
+
+    .card a.btn {
+      margin-top: auto;
+    }
+
+    /* Force horizontal scroll without wrapping */
+    .scroll-container {
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 15px;
+      gap: 15px;
+      scrollbar-width: thin;
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .scroll-container::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 4px;
+    }
+
+    .card-wrapper {
+      flex: 0 0 auto; /* Prevent shrinking, cards stay side by side */
+    }
+  

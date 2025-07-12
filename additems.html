@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Item - ReWear</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Poppins', sans-serif;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .form-title {
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+  <nav class="navbar navbar-dark" style="background-color: black;">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div class="scroll-container">
+      <a class="navbar-brand" href="#">
+        <img src="Assets/Homepage/images/logo.png" alt="Logo" width="80" height="40">
+      </a>
+      <div>
+        <button class="btn btn-success me-2">Log In</button>
+        <button class="btn btn-success">Sign Up</button>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="form-container">
+      <h2 class="form-title text-center">Add Clothing Item</h2>
+
+      <form id="addItemForm">
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input type="text" class="form-control" id="title" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <textarea class="form-control" id="description" rows="3" required></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="category" class="form-label">Category</label>
+          <select class="form-select" id="category" required>
+            <option value="" selected disabled>Select category</option>
+            <option value="Men">Men</option>
+            <option value="Women">Women</option>
+            <option value="Kids">Kids</option>
+            <option value="Accessories">Accessories</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="size" class="form-label">Size</label>
+          <select class="form-select" id="size" required>
+            <option value="" selected disabled>Select size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="Free Size">Free Size</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="condition" class="form-label">Condition</label>
+          <select class="form-select" id="condition" required>
+            <option value="" selected disabled>Select condition</option>
+            <option value="Like New">Like New</option>
+            <option value="Gently Used">Gently Used</option>
+            <option value="Used">Used</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="price" class="form-label">Points Value</label>
+          <input type="number" class="form-control" id="price" min="0" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="image" class="form-label">Upload Image</label>
+          <input type="file" class="form-control" id="image" accept="image/*">
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">Submit Item</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-black text-light pt-5 pb-4">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- About Us -->
+        <div class="col-12 col-md-4">
+          <h5 class="fw-bold mb-3 text-uppercase">About the Avengers</h5>
+          <p class="small text-secondary">
+            ReWear is a community-driven clothing exchange platform that promotes sustainable fashion by encouraging people to swap, share, and reuse wearable garments instead of throwing them away. Our mission is to reduce textile waste, empower conscious consumers, and build a circular fashion system that benefits both the planet and the people.
+            Together, we can make second-hand the first choice.
+          </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-12 col-md-4">
+          <h5 class="fw-bold mb-3 text-uppercase">Contact</h5>
+          <p class="small text-secondary mb-1">
+            Managed by: <span class="text-white fw-semibold">team fluxwave</span>
+          </p>
+          <p class="small text-secondary mb-1">
+            S.H.I.E.L.D. Helicarrier HQ
+          </p>
+          <p class="small text-secondary mb-0">
+            Email: <a href="#" class="text-decoration-none text-white">fury@shield.marvel</a>
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-12 col-md-4">
+          <h5 class="fw-bold mb-3 text-uppercase">Quick Links</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Home</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Explore Clothes</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Categories</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Join the ReWear Community</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-secondary mt-5" />
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-secondary small">
+        <p class="mb-2 mb-md-0">© 2025 Avengers Universe. All Rights Reserved.</p>
+        <div>
+          <a href="#" class="text-secondary fs-5 me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-secondary fs-5 me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-secondary fs-5 me-3"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-secondary fs-5"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("addItemForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const itemData = {
+        title: document.getElementById("title").value,
+        description: document.getElementById("description").value,
+        category: document.getElementById("category").value,
+        size: document.getElementById("size").value,
+        condition: document.getElementById("condition").value,
+        points: document.getElementById("price").value
+        // For image: you would use FormData to upload file to backend
+      };
+
+      console.log("Item Submitted:", itemData);
+
+      // Here you can send the data to your backend using fetch/axios
+      // Example:
+      /*
+      fetch('/api/items', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(itemData)
+      }).then(res => res.json()).then(data => {
+        alert('Item added successfully!');
+      }).catch(err => console.error(err));
+      */
+    });
+  </script>
+
+</body>
+</html>
